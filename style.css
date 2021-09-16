@@ -56,7 +56,6 @@ div {
     grid-template-rows: repeat(2, 50%);
     margin-top: 25px;
     margin-bottom: 25px;
-    gap: 2rem;
 }
 
 img {
@@ -72,6 +71,7 @@ section {
     padding-right: 20px;
     border-radius: 2%;
     box-shadow: 2px 5px 10px #DDDDDD;
+    margin: 1em;
     
 }
 
