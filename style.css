@@ -1,5 +1,93 @@
 @import url('https://fonts.googleapis.com/css2?family=Work+Sans:wght@200;300;400&display=swap');
 
 body {
-    font-family: font-family: 'Work Sans', sans-serif;
+    font-family: 'Work Sans', sans-serif;
+    background-color: #E4EFF7;
+    text-align: center;
+    padding: 2rem;
+}
+
+h2{
+    color: #4F5072;
+    font-weight: 580;
+    padding-bottom: 5px;
+    padding-top: 25px;
+}
+
+a {
+    color: #4F5072;
+    text-decoration: none;
+    text-align: center;
+    font-weight: 580;
+    position: relative;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    padding-left: 25px;
+    padding-right: 25px;
+    border-radius: 25px;
+}
+
+a::before {
+    content: "";
+    position: absolute;
+    background-color: #E4EFF7;
+    width: 80%;
+    height: 2px;
+    left: 10%;
+    top: -1rem;
+}
+
+a:hover{
+    background: #55A1E5;
+    color: white;
+    width: 18px;
+    box-shadow: 10px 10px 6px #DDDDDD;
+}
+
+p {
+    color: #A1ABAE;
+    font-weight: 300;
+    padding-bottom: 35px;
+}
+
+div {
+    display: grid;
+    grid-template-columns: repeat(4, 25%);
+    grid-template-rows: repeat(2, 50%);
+    margin-top: 25px;
+    margin-bottom: 25px;
+    gap: 2rem;
+}
+
+img {
+    width:100px;
+    height: 100px;
+    }
+
+section {
+    background-color: white;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    padding-left: 20px;
+    padding-right: 20px;
+    border-radius: 2%;
+    box-shadow: 2px 5px 10px #DDDDDD;
+    
+}
+
+@keyframes ligne {
+    0% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0;
+    }
+}
+
+a:hover::before {
+    animation: ligne 0.1s forwards ease-out;
+}
+
+#bourse{
+    padding-bottom: 30px;  
 }
